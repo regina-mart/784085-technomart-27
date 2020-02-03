@@ -59,8 +59,34 @@
           <h2 class="goods-catalog-caption">Перфораторы</h2>
           <div class="goods-block">
             <div class="filters-wrapper">
-              <!-- <form>
-              </form> -->
+              <p class="filters-text">Фильтр:</p>
+              <form action="" method="get">
+               <!-- <label for="range" class="filters-sections">Цена:</label>
+               <input type="range" name="range" id="range">
+               <input class="min" type="text" name="numerical-value" value="0">
+               <input class="max" type="text" name="numerical-value" value="30000"> -->
+                 <div class="filters-manufacturers">
+                   <p class="filters-sections">Производители:</p>
+                   <input type="checkbox" name="bosch" id="bosch" checked>
+                     <label class="filters-item-text" for="bosch">Bosch</label>
+                   <input type="checkbox" name="interskol" id="interskol">
+                     <label class="filters-item-text" for="interskol">Интерскол</label>
+                   <input type="checkbox" name="makita" id="makita" checked>
+                      <label class="filters-item-text" for="makita">Makita</label>
+                   <input type="checkbox" name="dewalt" id="dewalt">
+                      <label class="filters-item-text" for="dewalt">Dewalt</label>
+                   <input type="checkbox" name="hitachi" id="hitachi">
+                      <label class="filters-item-text" for="hitachi">Hitachi</label>
+                  </div>
+                  <div class="filters-power-supply">
+                    <p class="filters-sections">Питание:</p>
+                    <input type="radio" name="radio" id="battery" value="battery">
+                      <label class="filters-item-text" for="battery">Аккумудяторные</label>
+                    <input type="radio" name="radio" id="network" value="network">
+                      <label class="filters-item-text" for="network">Сетевые</label>
+                  </div>
+               <!--    Кнопка -->
+              </form>
             </div>
             <section class="goods-sorting">
               <div class="sorting-panel">
