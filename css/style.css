@@ -48,7 +48,7 @@ a {
 
 .order-panel-background {
   background-color: #293449;
-  min-height: 47px;
+  min-height: 42px;
 }
 
 .order-panel {
@@ -58,7 +58,7 @@ a {
 
 .header-logo-link {
   background-color: #ee3643;
-  /* box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24); */
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 
   padding-left: 55px;
   padding-right: 56px;
@@ -67,17 +67,19 @@ a {
 
   font-size: 0;
   line-height: 0;
+
+  position: relative;
 }
 
 .search {
   background-color: #293449;
   border: none;
 
-  width: 270px;
+  /* width: 270px; */
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 49px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .search,
@@ -126,7 +128,6 @@ a {
 .header-info {
   display: flex;
 
-  margin-top: 46px;
   margin-bottom: 44px;
 }
 
@@ -138,6 +139,8 @@ a {
 
   width: 196px;
 
+  margin: 0;
+  margin-top: 54px;
   margin-left: 52px;
   margin-right: 71px;
 }
@@ -151,7 +154,9 @@ a {
   padding-top: 11px;
   padding-bottom: 9px;
 
+  margin-top: 46px;
   margin-bottom: 0;
+
 }
 
 .phone-link {
@@ -167,27 +172,48 @@ a {
   font-size: 14px;
 
   margin: 0;
-  margin-top: 10px;
+  margin-top: 3px;
 
   text-align: center;
+}
+
+.user-list {
+  display: flex;
+  align-items: flex-start;
+
+  margin: 0;
+  margin-top: 46px;
+  margin-left: 69px;
+
+  padding: 0;
 }
 
 .user-link {
   color: #000000;
 
   font-size: 21px;
-  font-weight: 21px;
+  line-height: 21px;
 }
 
 .user-entry {
   background-color: #ffffff;
 
-  font-size: 21px;
-  font-weight: 21px;
+
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 48px;
+  padding-right: 27px;
 }
 
 .user-registration {
   background-color: #ffffff;
+
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  margin-left: 10px;
 }
 
 .navigation-list {
