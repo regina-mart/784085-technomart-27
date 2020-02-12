@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+}
+
+.order-panel-list,
+.user-list,
+.navigation-list,
+.goods-list,
+.manufacturers-list,
+.services-list,
+.delivery-list,
+.info-list,
+.catalog-navigation,
+.social-networks,
+.user-navigation,
+.breadcrumbs-list,
+.sorting-list,
+.catalog-goods-list,
+.pagination-list {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f4f7f9
+}
+
+.order-panel-background {
+  background-color: #293449;
+  min-height: 47px;
+}
+.order-panel {
+  display: flex;
+}
+
+.header-logo-link {
+  background-color: #ee3643;
+  /* box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24); */
+
+  padding-left: 55px;
+  padding-right: 56px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.heder-logo {
+  font-size: 0;
+  line-height: 0;
+}
+
+.order-panel-list {
+  display: flex;
+}
+
+.search,
+.order-panel-item {
+  font-size: 17px;
+  font-weight: 18px;
+}
+
+.search,
+.order-panel-link {
+  color: #ffffff;
+}
+
+.search {
+  background-color: #293449;
+  border: none;
+}
+
+.checkout {
+  background-color: #63a63e;
+}
+
+.header-info {
+  display: flex;
+}
+
+.shop-info {
+  color: #ee3643;
+
+  font-size: 16px;
+  font-weight: 23px;
+
+  width: 196px;
+}
+
+.header-phone {
+  border: 2px solid #ffffff;
+}
+
+.phone-link {
+  color: #ee3643;
+
+  font-size: 21px;
+  font-weight: 21px;
+}
+
+.header-address {
+  color: #32425c;
+
+  font-size: 14px;
+}
+
+.user-link {
+  color: #000000;
+
+  font-size: 21px;
+  font-weight: 21px;
+}
+
+.user-entry {
+  background-color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 21px;
+}
+
+.user-registration {
+  background-color: #ffffff;
+}
+
+.navigation-list {
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.navigation-link {
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 17px;
+}
