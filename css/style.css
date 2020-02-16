@@ -50,8 +50,6 @@ a {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-
-  /* display: inline-block; */
 }
 
 .main-header {
@@ -615,12 +613,13 @@ a {
 
 .manufacturers-list {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  padding-bottom: 54px;
+  padding-bottom: 64px;
 }
 
 .manufacturers-item {
@@ -639,29 +638,280 @@ a {
   margin-right: 0;
 }
 
-/* .manufacturers-link {
-
+li.manufacturers-item  {
+  font-size: 0;
+  line-height: 0;
 }
+
 .manufacturers-bosch {
   padding-top: 51px;
   padding-bottom: 55px;
   padding-left: 46px;
   padding-right: 45px;
-} */
-
-.services-section {
-  background-color: #f4f7f9;
-
-  margin: 0;
-  padding-left: 50px;
 }
 
-.services-caption {
+.services-background {
+  background-color: #f4f7f9;
+  padding-bottom: 98
+  px;
+}
+
+.services-caption,
+.company-caption,
+.contacs-map-caption {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 
-  margin; 0;
-  padding-top: 30px;
+  margin: 0;
+}
 
+.services-caption {
+  padding-top: 66px;
+  padding-bottom: 25px;
+}
+
+.services-text,
+.services-division-text,
+.company-text,
+.contacs-map-text {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+  margin: 0;
+}
+
+.services-division {
+  display: flex;
+}
+
+.services-list {
+  margin: 0;
+  margin-top: 71px;
+  margin-bottom: 98px;
+  padding: 0;
+}
+
+.services-item {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #32425c;
+  padding-left: 22px;
+}
+
+.services-link {
+  color: #ffffff;
+}
+
+.services-link-current {
+  color: #32425c;
+}
+
+.services-item-delivery {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-right: 139px;
+}
+
+.services-item-current {
+  background-color: #ffffff;
+}
+
+.services-item-guarantee {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.services-item-credit {
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+.services-division-delivery {
+  margin-left: 80px;
+  margin-top: 68px;
+
+  /* background-image: url(../img/delivery-services.png);
+  background-repeat: no-repeat;
+
+  position: relative;
+  top: 50px;
+  left: 50px; */
+}
+
+.services-division-caption {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.services-division-text {
+  margin-top: 24px;
+
+  width: 294px;
+  min-height: 83px;
+}
+
+.services-division-guarantee {
+  display: none;
+}
+
+.services-division-credit {
+  display: none;
+}
+
+.about-company {
+  display: flex;
+
+  margin-top: 50px;
+  margin-bottom: 87px;
+}
+
+.company-caption,
+.contacs-map-caption {
+  margin-top: 29px;
+}
+
+.company-text,
+.contacs-map-text {
+  margin-top: 25px;
+}
+
+.delivery-list {
+  padding-left: 36px;
+  /* margin-bottom: 0; */
+}
+
+.delivery-item {
+  font-size: 18px;
+  line-height: 20px;
+
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+.company-button {
+  display: inline-block;
+
+  margin-top: 11px;
+
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 41px;
+  padding-right: 40px;
+}
+
+
+.contacs-map {
+  margin-left: 57px;
+}
+
+.contacs-map-text {
+  width: 193px;
+}
+
+.map-img {
+  margin-top: 32px;
+}
+
+.contacs-map-button {
+  border: none;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-top: 32px;
+
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: block;
+  box-sizing: border-box;
+}
+
+.footer-background-top {
+  background-color: #32425c;
+  padding-bottom: 48px;
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-logo-link {
+  display: inline-block;
+
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+  padding-top: 20px;
+  padding-bottom: 17px;
+  padding-left: 41px;
+  padding-right: 41px;
+}
+
+.footer-contacs,
+.footer-phone {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+
+  width: 323px;
+
+  margin: 0;
+  margin-top: 28px;
+  margin-left: 2px;
+}
+
+.info-list {
+  display: flex;
+
+  margin: 0;
+  margin-left: 28px;
+  margin-top: 37px;
+}
+
+.info-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+
+  padding-right: 59px;
+}
+
+.info-link {
+  color: #f1f5f7;
+}
+
+.catalog-navigation {
+  display: flex;
+
+  margin: 0;
+  margin-left: 51px;
+  margin-top: 34px;
+}
+
+.catalog-navigation-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+
+  padding-right: 59px;
+}
+
+.catalog-navigation-link {
+  color: #ffd180;
+}
+
+.footer-background-bottom {
+  background-color: #293449;
 }
