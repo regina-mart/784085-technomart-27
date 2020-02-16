@@ -27,7 +27,7 @@
       </div>
       <div class="container">
         <div class="header-info">
-        <p class="shop-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="shop-info">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="header-phone"><a class="phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -39,13 +39,13 @@
         </div>
         <nav class="main-navigation">
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Компания</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Каталог</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Новости</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Спецпредложения</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-home" href="#">Главная</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-company" href="#">Компания</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-catalog" href="#">Каталог</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-news" href="#">Новости</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-special-offers" href="#">Спецпредложения</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-delivery" href="#">Доставка</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-contacts" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -55,45 +55,59 @@
         <h1 class="visually-hidden">Техномарт - строительный магазин</h1>
         <section class="catalog-divisions">
           <h2 class="visually-hidden">Каталог Техномарт</h2>
-          <div class="catalog-item">
-            <h3 class="catalog-caption">Материалы</h3>
-            <a class="catalog-button" href="#">На любой вкус</a>
-          </div>
-          <div class="catalog-item">
-            <h3 class="catalog-caption">Инструмент</h3>
-            <a class="catalog-button" href="#">На все случаи</a>
-          </div>
-          <div class="catalog-item">
-            <h3 class="catalog-caption">Техника</h3>
-            <a class="catalog-button" href="#">Для стройки</a>
-          </div>
-          <div class="catalog-slider">
-            <div class="catalog-slide-one">
-              <img class="catalog-slide-img" src="img/slide-image-1.jpg" width="620" height="266" alt="Перфораторы">
-              <h2 class="catalog-slider-caption">Перфораторы</h2>
-              <p class="catalog-slider-text">Настоящие мужские игрушки</p>
-              <a class="catalog-slider-button" href="catalog.html">Открыть каталог</a>
+          <div class="catalog-division-one">
+            <div class="catalog-item catalog-item-materials">
+              <h3 class="catalog-caption">Материалы</h3>
+              <p class="catalog-button catalog-button-materials">
+                <a class="catalog-button-text" href="#">На любой вкус</a>
+              </p>
             </div>
-            <div  class="catalog-slide-two">
-              <img class="catalog-slide-img" src="img/slide-image-2.jpg" width="620" height="266" alt="Дрели">
-              <h2 class="catalog-slider-caption">Дрели</h2>
-              <p class="catalog-slider-text">Соседям на радость!</p>
-              <a class="catalog-slider-button" href="catalog.html">Открыть каталог</a>
+            <div class="catalog-item catalog-item-tool">
+              <h3 class="catalog-caption">Инструмент</h3>
+              <p class="catalog-button catalog-button-tool">
+                <a class="catalog-button-text" href="#">На все случаи</a>
+              </p>
             </div>
-            <div class="catalog-item">
-              <h3 class="catalog-caption">Скидки 50%</h3>
-              <a class="catalog-button" href="#">На 350 товаров</a>
+            <div class="catalog-item catalog-item-technique">
+              <h3 class="catalog-caption">Техника</h3>
+              <p class="catalog-button catalog-button-technique">
+                <a class="catalog-button-text" href="#">Для стройки</a>
+              </p>
             </div>
-            <div class="catalog-item">
-              <h3 class="catalog-caption">Доставка</h3>
-              <a class="catalog-button" href="#">Бесплатно</a>
+          </div>
+          <div class="catalog-division-two">
+            <div class="catalog-slider">
+              <div class="catalog-slider-one">
+                <h2 class="catalog-slider-caption">Перфораторы</h2>
+                <p class="catalog-slider-text">Настоящие мужские игрушки</p>
+                <a class="catalog-slider-button button-red" href="catalog.html">Открыть каталог</a>
+              </div>
+              <div  class="catalog-slider-two">
+                <h2 class="catalog-slider-caption">Дрели</h2>
+                <p class="catalog-slider-text">Соседям на радость!</p>
+                <a class="catalog-slider-button button-red" href="catalog.html">Открыть каталог</a>
+              </div>
+            </div>
+            <div class="catalog-division-three">
+              <div class="catalog-item catalog-item-discount">
+                <h3 class="catalog-caption">Скидки 50%</h3>
+                <p class="catalog-button catalog-button-discount">
+                  <a class="catalog-button-text" href="#">На 350 товаров</a>
+                </p>
+              </div>
+              <div class="catalog-item catalog-item-delivery">
+                <h3 class="catalog-caption">Доставка</h3>
+                <p class="catalog-button catalog-button-delivery">
+                  <a class="catalog-button-text" href="#">Бесплатно</a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <section class="goods-division">
           <div class="goods-manufacturers-division">
             <h2 class="goods-manufacturers-caption">Популярные товары:</h2>
-            <a class="goods-manufacturers-button" href="#">Все популярные товары</a>
+            <a class="goods-manufacturers-button goods-button button-red" href="#">Все популярные товары</a>
           </div>
           <ul class="goods-list">
             <li class="goods-item">
@@ -117,7 +131,7 @@
             <li class="goods-item">
               <img class="goods-img" src="img/perforator-2000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3 class="goods-caption">Перфоратор BOSCH BFG 2000</h3>
-              <p class="goods-price">25 500 Р.</p>
+              <p class="goods-price goods-price-four">12 500 Р.</p>
             </li>
           </ul>
           <!-- <ul>
@@ -128,47 +142,47 @@
         <section class="manufacturers-division">
           <div class="goods-manufacturers-division">
             <h2 class="goods-manufacturers-caption">Популярные производители:</h2>
-            <a class="goods-manufacturers-button" href="#">Все производители</a>
+            <a class="goods-manufacturers-button manufacturers-button button-red" href="#">Все производители</a>
           </div>
           <ul class="manufacturers-list">
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/bosch.png" width="126" height="37" alt="Bosch">
+              <a class="manufacturers-link " href="#">
+                <img class="manufacturers-img manufacturers-bosch" src="img/bosch.png" width="126" height="37" alt="Bosch">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/makita.png" width="123" height="40" alt="Makita">
+                <img class="manufacturers-img manufacturers-makita" src="img/makita.png" width="123" height="40" alt="Makita">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/dewalt.png" width="146" height="44" alt="DeWalt">
+                <img class="manufacturers-img manufacturers-dewalt" src="img/dewalt.png" width="146" height="44" alt="DeWalt">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/interskol.png" width="200" height="88" alt="Интерскол">
+                <img class="manufacturers-img manufacturers-interskol" src="img/interskol.png" width="200" height="88" alt="Интерскол">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/hitachi.png" width="169" height="31" alt="Hitachi">
+                <img class="manufacturers-img manufacturers-hitachi" src="img/hitachi.png" width="169" height="31" alt="Hitachi">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/lg.png" width="121" height="73" alt="LG">
+                <img class="manufacturers-img manufacturers-lg" src="img/lg.png" width="121" height="73" alt="LG">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/aeg.png" width="151" height="96" alt="AEG">
+                <img class="manufacturers-img manufacturers-aeg" src="img/aeg.png" width="151" height="96" alt="AEG">
               </a>
             </li>
             <li class="manufacturers-item">
               <a class="manufacturers-link" href="#">
-                <img class="manufacturers-img" src="img/metabo.png" width="204" height="69" alt="Metabo">
+                <img class="manufacturers-img manufacturers-metabo" src="img/metabo.png" width="204" height="69" alt="Metabo">
               </a>
             </li>
           </ul>
@@ -215,7 +229,7 @@
               <li class="delivery-item">Автотрейдинг</li>
               <li class="delivery-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="company-button"href="#">Подробнее о компании</a>
+            <a class="company-button button-red" href="#">Подробнее о компании</a>
           </div>
           <div class="contacs-map">
             <h2 class="contacs-map-caption">Контакты</h2>
@@ -223,7 +237,7 @@
             <a class="map-link" href="#">
               <img class="map-img" src="img/map.jpg" width="300" height="158" alt="Магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </a>
-            <button class="contacs-map-button">Заблудились? Напишите нам</button>
+            <button class="contacs-map-button button-red">Заблудились? Напишите нам</button>
           </div>
         </section>
       </div>
