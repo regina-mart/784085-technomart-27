@@ -650,6 +650,55 @@ li.manufacturers-item  {
   padding-right: 45px;
 }
 
+.manufacturers-makita {
+  padding-top: 48px;
+  padding-bottom: 55px;
+  padding-left: 47px;
+  padding-right: 45px;
+}
+
+.manufacturers-dewalt {
+  padding-top: 47px;
+  padding-bottom: 52px;
+  padding-left: 36px;
+  padding-right: 45px;
+}
+
+.manufacturers-interskol {
+  padding-top: 20px;
+  padding-bottom: 34px;
+  padding-left: 8px;
+  padding-right: 10px;
+}
+
+.manufacturers-hitachi {
+  padding-top: 57px;
+  padding-bottom: 54px;
+  padding-left: 27px;
+  padding-right: 21px;
+}
+
+.manufacturers-lg {
+  padding-top: 33px;
+  padding-bottom: 36px;
+  padding-left: 47px;
+  padding-right: 50px;
+}
+
+.manufacturers-aeg {
+  padding-top: 22px;
+  padding-bottom: 25px;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.manufacturers-metabo {
+  padding-top: 33px;
+  padding-bottom: 41px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
 .services-background {
   background-color: #f4f7f9;
   padding-bottom: 98
@@ -840,7 +889,7 @@ li.manufacturers-item  {
 
 .footer-background-top {
   background-color: #32425c;
-  padding-bottom: 48px;
+  padding-bottom: 49px;
 }
 
 .footer-top {
@@ -914,4 +963,44 @@ li.manufacturers-item  {
 
 .footer-background-bottom {
   background-color: #293449;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.copyright-info {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 228px;
+
+  margin: 0;
+  margin-top: 38px;
+  margin-left: 1px;
+  margin-bottom: 34px;
+}
+
+.social-networks {
+  display: flex;
+}
+
+.vk-social::before {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.feedback-info,
+.developed-by {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  margin: 0;
+}
+
+.feedback-link,
+.developed-by-link {
+  color: #ffd180;
 }
