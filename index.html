@@ -14,13 +14,15 @@
             <a class="header-logo-link header-logo-shadow" href="#">
               <img class="header-logo" src="img/logo-header.png" width="109" height="19" alt="Логотип магазина Техномарт">
             </a>
+            <div  class="form-search">
             <form action="https://echo.htmlacademy.ru" method="get">
               <input class="search" type="search" name="search" placeholder="Поиск:">
             </form>
+          </div>
             <ul class="order-panel-list">
-              <li class="order-panel-item bookmark"><a class="order-panel-link" href="#">Закладки: 0</a></li>
-              <li class="order-panel-item basket"><a class="order-panel-link" href="#">Корзина: 0</a></li>
-              <li class="order-panel-item checkout"><a class="order-panel-link" href="#">Оформить заказ</a></li>
+              <li class="order-panel-item bookmark"><a class="order-panel-link order-panel-link-bookmark" href="#">Закладки: 0</a></li>
+              <li class="order-panel-item basket"><a class="order-panel-link order-panel-link-basket" href="#">Корзина: 0</a></li>
+              <li class="order-panel-item checkout"><a class="order-panel-link order-panel-link-checkout" href="#">Оформить заказ</a></li>
             </ul>
           </div>
         </div>
@@ -33,19 +35,19 @@
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
           <ul class="user-list">
-            <li class="user-entry"><a class="user-link" href="#">Войти</a></li>
+            <li class="user-login"><a class="user-link user-link-login" href="#">Войти</a></li>
             <li class="user-registration"><a class="user-link" href="#">Регистрация</a></li>
           </ul>
         </div>
         <nav class="main-navigation">
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link navigation-home" href="#">Главная</a></li>
-            <li class="navigation-item"><a class="navigation-link navigation-company" href="#">Компания</a></li>
-            <li class="navigation-item"><a class="navigation-link navigation-catalog" href="#">Каталог</a></li>
-            <li class="navigation-item"><a class="navigation-link navigation-news" href="#">Новости</a></li>
-            <li class="navigation-item"><a class="navigation-link navigation-special-offers" href="#">Спецпредложения</a></li>
-            <li class="navigation-item"><a class="navigation-link navigation-delivery" href="#">Доставка</a></li>
-            <li class="navigation-item"><a class="navigation-link navigation-contacts" href="#">Контакты</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Компания</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Каталог</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Новости</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Спецпредложения</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -287,16 +289,18 @@
           <p class="copyright-info">© 2010–2019 Компания «Техномарт»
               Все права защищены</p>
           <ul class="social-networks">
-            <li class="vk-social"><a class="vk-link visually-hidden" href="#">VK</a></li>
-            <li class="fb-social"><a class="fb-link visually-hidden" href="#">FB</a></li>
-            <li class="insta-social"><a class="insta-link visually-hidden" href="#">INST</a></li>
+            <li class="social-item vk-social"><a class="vk-link" href="#"><span class="visually-hidden">VK</span></a></li>
+            <li class="social-item fb-social"><a class="fb-link" href="#"><span class="visually-hidden">FB</span></a></li>
+            <li class="social-item insta-social"><a class="insta-link" href="#"><span class="visually-hidden">INST</span></a></li>
           </ul>
-          <p class="feedback-info">Обратная связь:
-            <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="developed-by">Разработано —
-            <a class="developed-by-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <div class="feedback-developed">
+            <p class="feedback-info">Обратная связь:
+              <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="developed-by">Разработано —
+              <a class="developed-by-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
