@@ -8,34 +8,44 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="order-panel">
-          <a class="header-logo-link" href="#">
-            <img class="header-logo" src="img/logo-header.png" width="109" height="19" alt="Логотип магазина Техномарт">
-          </a>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" placeholder="Поиск:">
-          </form>
-          <ul class="order-panel-list">
-            <li class="order-panel-item bookmark"><a class="order-panel-link" href="#">Закладки: 0</a></li>
-            <li class="order-panel-item basket-catalog"><a class="order-panel-link" href="#">Корзина: 10</a></li>
-            <li class="order-panel-item checkout"><a class="order-panel-link" href="#">Оформить заказ</a></li>
-          </ul>
+      <div class="order-panel-background">
+        <div class="container">
+          <div class="order-panel">
+            <a class="header-logo-link header-logo-shadow" href="#">
+              <img class="header-logo" src="img/logo-header.png" width="109" height="19" alt="Логотип магазина Техномарт">
+            </a>
+            <div  class="form-search">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <p class="search-icon">
+                <input class="search" type="search" name="search" placeholder="Поиск:">
+              </p>
+            </form>
+          </div>
+            <ul class="order-panel-list">
+              <li class="order-panel-item bookmark"><a class="order-panel-link order-panel-link-bookmark" href="#">Закладки: 0</a></li>
+              <li class="order-panel-item basket-catalog"><a class="order-panel-link order-panel-link-basket" href="#">Корзина: 10</a></li>
+              <li class="order-panel-item checkout"><a class="order-panel-link order-panel-link-checkout" href="#">Оформить заказ</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="container">
         <div class="header-info">
-          <p class="shop-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="shop-info">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
           <div class="header-contacts">
             <p class="header-phone"><a class="phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
             <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <ul class="user-list">
-            <li class="user-account"><a class="user-link" href="#">Равшан Джамшутович</a></li>
-            <li class="user-exit visually-hidden"><a class="exit-link" href="#">Выход</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li class="my-orders"><a class="my-orders-link" href="#">Мои заказы</a></li>
-            <li class="personal-cabinet"><a class="personal-cabinet-link" href="#">Личный кабинет</a></li>
-          </ul>
+          <div class="user-list-catalog">
+            <ul class="user-list">
+              <li class="user-account"><a class="user-link" href="#">Равшан Джамшутович</a></li>
+              <li class="user-exit"><a class="exit-link" href="#"><span class="visually-hidden">Выход</span></a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li class="my-orders"><a class="user-navigation-link my-orders-link" href="#">Мои заказы</a></li>
+              <li class="personal-cabinet"><a class="user-navigation-link personal-cabinet-link" href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
         </div>
         <nav class="main-navigation">
           <ul class="navigation-list">
@@ -54,7 +64,7 @@
       <div class="container">
         <h1 class="visually-hidden">Каталог магазина Техномарт</h1>
         <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a class="visually-hidden breadcrumbs-home" href="#">Home</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-home" href="#"><span class="visually-hidden">Home</span></a></li>
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Инструмент</a></li>
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Перфораторы</a></li>
@@ -64,11 +74,27 @@
           <div class="goods-block">
             <div class="filters-wrapper">
               <p class="filters-text">Фильтр:</p>
-              <form action="" method="get">
-               <!-- <label for="range" class="filters-sections">Цена:</label>
-               <input type="range" name="range" id="range">
-               <input class="min" type="text" name="numerical-value" value="0">
-               <input class="max" type="text" name="numerical-value" value="30000"> -->
+              <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-item">
+                  <legend class="filters-sections">Цена:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                      <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Другие элементы формы -->
+
+              </form>
                  <div class="filters-manufacturers">
                    <p class="filters-sections">Производители:</p>
                    <input type="checkbox" name="bosch" id="bosch" checked>
@@ -94,7 +120,7 @@
             </div>
             <section class="goods-sorting">
               <div class="sorting-panel">
-                <p class="filters-text">Сортировка:</p>
+                <p class="filters-text-sorting">Сортировка:</p>
                 <ul class="sorting-list">
                   <li class="sorting-item"><a class="sorting-link sorting-link-active" href="#">По цене</a></li>
                   <li class="sorting-item"><a class="sorting-link" href="#">По типу</a></li>
