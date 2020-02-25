@@ -80,23 +80,22 @@
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale">
-                        <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                        <div class="bar"></div>
                       </div>
                       <div class="toggle toggle-min"></div>
                       <div class="toggle toggle-max"></div>
                     </div>
                     <div class="price-controls">
-                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                      <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                      <input class="min-price" name="min-price" type="text" value="0">
+                      <div class="price-hyphen"></div>
+                      <input class="max-price" name="max-price" type="text" value="30000">
                     </div>
                   </div>
                 </fieldset>
-
-                <!-- Другие элементы формы -->
-
-              </form>
                  <div class="filters-manufacturers">
+                   <div class="filters-line-one"></div>
                    <p class="filters-sections">Производители:</p>
+                   <div class="filters-checkbox">
                    <input type="checkbox" name="bosch" id="bosch" checked>
                      <label class="filters-item-text" for="bosch">Bosch</label>
                    <input type="checkbox" name="interskol" id="interskol">
@@ -108,14 +107,18 @@
                    <input type="checkbox" name="hitachi" id="hitachi">
                       <label class="filters-item-text" for="hitachi">Hitachi</label>
                   </div>
+                  <div class="filters-line-two"></div>
                   <div class="filters-power-supply">
                     <p class="filters-sections">Питание:</p>
+                    <div class="filters-catalog-radio">
                     <input type="radio" name="radio" id="battery" value="battery">
                       <label class="filters-item-text" for="battery">Аккумуляторные</label>
                     <input type="radio" name="radio" id="network" value="network">
                       <label class="filters-item-text" for="network">Сетевые</label>
+                    </div>
                   </div>
-                  <button type="submit">Показать</button>
+                  <a href="#" class="filters-catalog-button">Показать</a>
+                </div>
               </form>
             </div>
             <section class="goods-sorting">
