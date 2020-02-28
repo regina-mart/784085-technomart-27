@@ -22,9 +22,9 @@
             </form>
           </div>
             <ul class="order-panel-list">
-              <li class="order-panel-item bookmark"><a class="order-panel-link order-panel-link-bookmark" href="#">Закладки: 0</a></li>
-              <li class="order-panel-item basket"><a class="order-panel-link order-panel-link-basket" href="#">Корзина: 0</a></li>
-              <li class="order-panel-item checkout"><a class="order-panel-link order-panel-link-checkout" href="#">Оформить заказ</a></li>
+              <li class="order-panel-item"><a class="order-panel-link order-panel-link-bookmark" href="#">Закладки: 0</a></li>
+              <li class="order-panel-item"><a class="order-panel-link order-panel-link-basket" href="#">Корзина: 0</a></li>
+              <li class="order-panel-item"><a class="order-panel-link order-panel-link-checkout" href="#">Оформить заказ</a></li>
             </ul>
           </div>
         </div>
@@ -37,8 +37,8 @@
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
           <ul class="user-list">
-            <li class="user-login"><a class="user-link user-link-login" href="#">Войти</a></li>
-            <li class="user-registration"><a class="user-link" href="#">Регистрация</a></li>
+            <li class="user-item"><a class="user-link user-link-login" href="#">Войти</a></li>
+            <li class="user-item"><a class="user-link user-link-registration" href="#">Регистрация</a></li>
           </ul>
         </div>
         <nav class="main-navigation">
@@ -63,19 +63,19 @@
             <div class="catalog-item catalog-item-materials">
               <h3 class="catalog-caption">Материалы</h3>
               <p class="catalog-button catalog-button-materials">
-                <a class="catalog-button-text" href="#">На любой вкус</a>
+                <a class="catalog-button-text catalog-link-materials" href="#">На любой вкус</a>
               </p>
             </div>
             <div class="catalog-item catalog-item-tool">
               <h3 class="catalog-caption">Инструмент</h3>
               <p class="catalog-button catalog-button-tool">
-                <a class="catalog-button-text" href="#">На все случаи</a>
+                <a class="catalog-button-text catalog-link-tool" href="#">На все случаи</a>
               </p>
             </div>
             <div class="catalog-item catalog-item-technique">
               <h3 class="catalog-caption">Техника</h3>
               <p class="catalog-button catalog-button-technique">
-                <a class="catalog-button-text" href="#">Для стройки</a>
+                <a class="catalog-button-text catalog-link-technique" href="#">Для стройки</a>
               </p>
             </div>
           </div>
@@ -102,13 +102,13 @@
               <div class="catalog-item catalog-item-discount">
                 <h3 class="catalog-caption">Скидки 50%</h3>
                 <p class="catalog-button catalog-button-discount">
-                  <a class="catalog-button-text" href="#">На 350 товаров</a>
+                  <a class="catalog-button-text catalog-link-discount" href="#">На 350 товаров</a>
                 </p>
               </div>
               <div class="catalog-item catalog-item-delivery">
                 <h3 class="catalog-caption">Доставка</h3>
                 <p class="catalog-button catalog-button-delivery">
-                  <a class="catalog-button-text" href="#">Бесплатно</a>
+                  <a class="catalog-button-text catalog-link-delivery" href="#">Бесплатно</a>
                 </p>
               </div>
             </div>
@@ -218,9 +218,9 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <div class="services-division">
             <ul class="services-list">
-              <li class="services-item services-item-delivery services-item-current"><a class="services-link services-link-current" href="#">Доставка</a></li>
-              <li class="services-item services-item-guarantee"><a class="services-link" href="#">Гарантия</a></li>
-              <li class="services-item services-item-credit"><a class="services-link" href="#">Кредит</a></li>
+              <li class="services-item"><a class="services-link services-link-current" href="#">Доставка</a></li>
+              <li class="services-item"><a class="services-link" href="#">Гарантия</a></li>
+              <li class="services-item"><a class="services-link" href="#">Кредит</a></li>
             </ul>
             <div class="services-division-delivery">
               <h2 class="services-division-caption">Доставка</h2>
@@ -268,7 +268,7 @@
             <a class="map-link" href="#">
               <img class="map-img" src="img/map.jpg" width="300" height="158" alt="Магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </a>
-            <a class="contacs-map-button button-red">Заблудились? Напишите нам</a>
+            <a href="#" class="contacs-map-button button-red">Заблудились? Напишите нам</a>
           </div>
           <div class="map-modal-window">
             <form class="map-modal-form" action="#" method="post">
@@ -284,7 +284,7 @@
               </div>
               <div class="map-letter">
                 <label class="map-modal-label" for="map-letter">Текст письма:</label>
-                  <input class="map-input map-input-letter" type="text" name="map-letter" id="map-letter" placeholder="В свободной форме">
+                  <textarea class="map-textarea map-input-letter" name="map-letter" id="map-letter" placeholder="В свободной форме"></textarea>
               </div>
               <button class="map-button button-red" type="submit">Отправить</button>
             </form>

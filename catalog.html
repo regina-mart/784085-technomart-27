@@ -22,9 +22,9 @@
             </form>
           </div>
             <ul class="order-panel-list">
-              <li class="order-panel-item bookmark"><a class="order-panel-link order-panel-link-bookmark" href="#">Закладки: 0</a></li>
-              <li class="order-panel-item basket-catalog"><a class="order-panel-link order-panel-link-basket" href="#">Корзина: 10</a></li>
-              <li class="order-panel-item checkout"><a class="order-panel-link order-panel-link-checkout" href="#">Оформить заказ</a></li>
+              <li class="order-panel-item"><a class="order-panel-link order-panel-link-bookmark" href="#">Закладки: 0</a></li>
+              <li class="order-panel-item"><a class="order-panel-link order-panel-link-basket-catalog" href="#">Корзина: 10</a></li>
+              <li class="order-panel-item"><a class="order-panel-link order-panel-link-checkout" href="#">Оформить заказ</a></li>
             </ul>
           </div>
         </div>
@@ -38,8 +38,8 @@
           </div>
           <div class="user-list-catalog">
             <ul class="user-list">
-              <li class="user-account"><a class="user-link" href="#">Равшан Джамшутович</a></li>
-              <li class="user-exit"><a class="exit-link" href="#"><span class="visually-hidden">Выход</span></a></li>
+              <li class="user-item"><a class="user-link user-link-account" href="#">Равшан Джамшутович</a></li>
+              <li class="user-item"><a class="user-link user-link-exit" href="#"><span class="visually-hidden">Выход</span></a></li>
             </ul>
             <ul class="user-navigation">
               <li class="my-orders"><a class="user-navigation-link my-orders-link" href="#">Мои заказы</a></li>
@@ -96,25 +96,25 @@
                    <div class="filters-line-one"></div>
                    <p class="filters-sections">Производители:</p>
                    <div class="filters-checkbox">
-                   <input type="checkbox" name="bosch" id="bosch" checked>
-                     <label class="filters-item-text" for="bosch">Bosch</label>
-                   <input type="checkbox" name="interskol" id="interskol">
-                     <label class="filters-item-text" for="interskol">Интерскол</label>
-                   <input type="checkbox" name="makita" id="makita" checked>
-                      <label class="filters-item-text" for="makita">Makita</label>
-                   <input type="checkbox" name="dewalt" id="dewalt">
-                      <label class="filters-item-text" for="dewalt">Dewalt</label>
-                   <input type="checkbox" name="hitachi" id="hitachi">
-                      <label class="filters-item-text" for="hitachi">Hitachi</label>
+                   <input class="checkbox-input" type="checkbox" name="bosch" id="bosch" checked>
+                     <label class="checkbox-label" for="bosch">Bosch</label>
+                   <input class="checkbox-input" type="checkbox" name="interskol" id="interskol">
+                     <label class="checkbox-label" for="interskol">Интерскол</label>
+                   <input class="checkbox-input" type="checkbox" name="makita" id="makita" checked>
+                      <label class="checkbox-label" for="makita">Makita</label>
+                   <input class="checkbox-input" type="checkbox" name="dewalt" id="dewalt">
+                      <label class="checkbox-label" for="dewalt">Dewalt</label>
+                   <input class="checkbox-input" type="checkbox" name="hitachi" id="hitachi">
+                      <label class="checkbox-label" for="hitachi">Hitachi</label>
                   </div>
                   <div class="filters-line-two"></div>
                   <div class="filters-power-supply">
                     <p class="filters-sections">Питание:</p>
                     <div class="filters-catalog-radio">
-                    <input type="radio" name="radio" id="battery" value="battery">
-                      <label class="filters-item-text" for="battery">Аккумуляторные</label>
-                    <input type="radio" name="radio" id="network" value="network">
-                      <label class="filters-item-text" for="network">Сетевые</label>
+                    <input class="radio-input" type="radio" name="radio" id="battery" value="battery" checked>
+                      <label class="radio-label" for="battery">Аккумуляторные</label>
+                    <input class="radio-input" type="radio" name="radio" id="network" value="network">
+                      <label class="radio-label" for="network">Сетевые</label>
                     </div>
                   </div>
                   <a href="#" class="filters-catalog-button">Показать</a>
