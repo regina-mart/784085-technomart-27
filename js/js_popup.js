@@ -1,6 +1,6 @@
 var link = document.querySelector(".contacs-map-button");
 var popup = document.querySelector(".map-modal-window");
-var close = popup.querySelector(".map-modal-window::after");
+var close = popup.querySelector(".button-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=map-name]");
 var mail = popup.querySelector("[name=map-mail]");
@@ -53,4 +53,4 @@ window.addEventListener("keydown", function (evt) {
      popup.classList.remove("modal-error");
    }
  }
-}); 
+});
