@@ -17,13 +17,6 @@ try {
 link.addEventListener("click", function (evt) {
  evt.preventDefault();
  popup.classList.add("modal-show");
-
- if (storage) {
-   login.value = storage;
-   mail.focus();
- } else {
-   login.focus();
- }
 });
 
 close.addEventListener("click", function (evt) {
