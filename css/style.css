@@ -137,6 +137,7 @@ a {
 .search {
   background-color: #293449;
   width: 261px;
+  min-height: 42px;
 
   border: none;
 
@@ -145,11 +146,6 @@ a {
   padding-left: 47px;
 
   margin-left: 220px;
-
-  /* fix:
-  min-height: 42px;
-  background-color: transparent;
-  border: none; */
 }
 
 .search:hover {
@@ -1554,13 +1550,13 @@ li.manufacturers-item  {
   z-index: 1;
 }
 
-.about-company {
+.container-about-company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
-  margin-top: 50px;
-  margin-bottom: 87px;
+  padding-top: 50px;
+  padding-bottom: 87px;
 
   position: relative;
 }
@@ -1629,21 +1625,14 @@ li.manufacturers-item  {
 
 .interactive-map {
   position: absolute;
-  top: -17px;
+  top: 33px;
   left: 0;
-  z-index: 1;
-
-  -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-
-          box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-  background-color: #efeae4;
-
   z-index: 3;
 }
 
 .map-big-img {
   position: absolute;
-  top: -17px;
+  top: 33px;
   left: 0;
 
   -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -1658,7 +1647,7 @@ li.manufacturers-item  {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: -12px;
+  top: 38px;
   right: 24px;
   padding: 0;
 
@@ -1720,7 +1709,7 @@ li.manufacturers-item  {
           box-sizing: border-box;
 
   position: absolute;
-  top: 155px;
+  top: 205px;
   left: 160px;
 
   display: none;
@@ -1791,25 +1780,33 @@ li.manufacturers-item  {
   border: 2px solid #ee3643;
 }
 
-.map-input::-webkit-input-placeholder, .map-textarea::-webkit-input-placeholder {
+.map-input::-webkit-input-placeholder,
+.map-textarea::-webkit-input-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.map-input::-moz-placeholder, .map-textarea::-moz-placeholder {
+.map-input::-moz-placeholder,
+.map-textarea::-moz-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.map-input:-ms-input-placeholder, .map-textarea:-ms-input-placeholder {
+.map-input:-ms-input-placeholder,
+.map-textarea:-ms-input-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.map-input::-ms-input-placeholder, .map-textarea::-ms-input-placeholder {
+.map-input::-ms-input-placeholder,
+.map-textarea::-ms-input-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1817,6 +1814,7 @@ li.manufacturers-item  {
 
 .map-input::placeholder,
 .map-textarea::placeholder {
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -2425,9 +2423,10 @@ li.manufacturers-item  {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
-  position: absolute;
-  top: 32px;
-  left: 160px;
+          position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
   z-index: 1;
 
@@ -2755,7 +2754,7 @@ li.manufacturers-item  {
   opacity: 1;
 }
 
-disabled {
+.checkbox-disabled:disabled {
   opacity: 0.3;
 }
 
