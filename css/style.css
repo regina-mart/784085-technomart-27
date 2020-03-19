@@ -1049,13 +1049,15 @@ a {
 .goods-item:hover,
 .goods-item:focus {
   border: 1px solid transparent;
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .goods-item-catalog:hover,
 .goods-item-catalog:focus {
   border: 1px solid transparent;
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .goods-item:nth-child(4) {
@@ -1270,13 +1272,15 @@ a {
 .manufacturers-link:hover,
 .manufacturers-link:focus {
   border: none;
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-item:active {
   border: none;
   opacity: 0.5;
-  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+          box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-item:nth-child(4n) {
@@ -1698,9 +1702,17 @@ li.manufacturers-item  {
 
   z-index: 5;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .map-button-close::after {
@@ -1735,7 +1747,9 @@ li.manufacturers-item  {
   z-index: 1;
   top: 0;
   left: 51%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 960px;
 }
 
@@ -1752,7 +1766,9 @@ li.manufacturers-item  {
   position: absolute;
   top: 205px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 
   display: none;
 }
@@ -1854,6 +1870,34 @@ li.manufacturers-item  {
   color: #a9a9a9;
 }
 
+.map-input::-webkit-input-placeholder, .map-textarea::-webkit-input-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.map-input::-moz-placeholder, .map-textarea::-moz-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.map-input:-ms-input-placeholder, .map-textarea:-ms-input-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.map-input::-ms-input-placeholder, .map-textarea::-ms-input-placeholder {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
 .map-input::placeholder,
 .map-textarea::placeholder {
   font-family: "PTSans", Arial, sans-serif;
@@ -1905,9 +1949,17 @@ li.manufacturers-item  {
   top: 5px;
   right: 4px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button-close::after {
@@ -1926,22 +1978,37 @@ li.manufacturers-item  {
   z-index: 1;
 }
 
- @keyframes bounce {
- 0% { transform: translate(-50%, -2000px); }
- 70% { transform: translate(-50%, 30px); }
- 90% { transform: translate(-50%, -10px); }
- 100% { transform: translate(-50%, 0); }
+ @-webkit-keyframes bounce {
+ 0% { -webkit-transform: translate(-50%, -2000px); transform: translate(-50%, -2000px); }
+ 70% { -webkit-transform: translate(-50%, 30px); transform: translate(-50%, 30px); }
+ 90% { -webkit-transform: translate(-50%, -10px); transform: translate(-50%, -10px); }
+ 100% { -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
  }
 
+ @keyframes bounce {
+ 0% { -webkit-transform: translate(-50%, -2000px); transform: translate(-50%, -2000px); }
+ 70% { -webkit-transform: translate(-50%, 30px); transform: translate(-50%, 30px); }
+ 90% { -webkit-transform: translate(-50%, -10px); transform: translate(-50%, -10px); }
+ 100% { -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+ }
+
+ @-webkit-keyframes shake {
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+  }
+
  @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
   }
 
 .modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   }
 
 .footer-background-top {
@@ -2475,7 +2542,9 @@ li.manufacturers-item  {
           position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
 
   z-index: 1;
 
@@ -2544,14 +2613,18 @@ li.manufacturers-item  {
 
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   }
 
 .modal-show-catalog {
   display: block;
-  animation-name: bounce-two;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce-two;
+          animation-name: bounce-two;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   }
 
 
@@ -2559,7 +2632,8 @@ li.manufacturers-item  {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin-top: 20px;
 }
