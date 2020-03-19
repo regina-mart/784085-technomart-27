@@ -904,7 +904,8 @@ a {
   opacity: 1;
 }
 
-.slide-focus:focus ~ .slide-label {
+#slide-1:focus ~ .controls-catalog-slider .slide-label-one,
+#slide-2:focus ~ .controls-catalog-slider .slide-label-two  {
   outline: 2px solid #68A2F9;
 }
 
@@ -1266,8 +1267,8 @@ a {
           box-sizing: border-box;
 }
 
-.manufacturers-item:hover,
-.manufacturers-item:focus {
+.manufacturers-link:hover,
+.manufacturers-link:focus {
   border: none;
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1292,6 +1293,9 @@ li.manufacturers-item  {
   padding-bottom: 55px;
   padding-left: 46px;
   padding-right: 45px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-makita {
@@ -1299,6 +1303,9 @@ li.manufacturers-item  {
   padding-bottom: 55px;
   padding-left: 47px;
   padding-right: 50px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-dewalt {
@@ -1306,6 +1313,9 @@ li.manufacturers-item  {
   padding-bottom: 52px;
   padding-left: 36px;
   padding-right: 36px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-interskol {
@@ -1313,6 +1323,9 @@ li.manufacturers-item  {
   padding-bottom: 34px;
   padding-left: 8px;
   padding-right: 10px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-hitachi {
@@ -1320,6 +1333,9 @@ li.manufacturers-item  {
   padding-bottom: 54px;
   padding-left: 27px;
   padding-right: 21px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-lg {
@@ -1327,6 +1343,9 @@ li.manufacturers-item  {
   padding-bottom: 36px;
   padding-left: 47px;
   padding-right: 50px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-aeg {
@@ -1334,6 +1353,9 @@ li.manufacturers-item  {
   padding-bottom: 25px;
   padding-left: 34px;
   padding-right: 34px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .manufacturers-metabo {
@@ -1341,6 +1363,9 @@ li.manufacturers-item  {
   padding-bottom: 41px;
   padding-left: 10px;
   padding-right: 5px;
+
+  display: inline-block;
+  vertical-align: top;
 }
 
 .services-background {
@@ -1709,7 +1734,7 @@ li.manufacturers-item  {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 50%;
+  left: 51%;
   transform: translateX(-50%);
   width: 960px;
 }
@@ -3015,7 +3040,7 @@ li.manufacturers-item  {
 .pagination-link:focus {
   background-color: #ee3643;
   color: #ffffff;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .pagination-item:nth-child(4) a {
@@ -3026,10 +3051,6 @@ li.manufacturers-item  {
 .pagination-current {
   background-color: #ee3643;
   color: #ffffff;
-  border: none;
-
-  padding-bottom: 11px;
-  padding-right: 16px;
 }
 
 .about-goods {
