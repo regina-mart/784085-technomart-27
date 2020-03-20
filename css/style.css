@@ -1084,9 +1084,14 @@ a {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+  color: #000000;
 
   margin: 0;
   margin-top: 1px;
+}
+
+.goods-caption-link {
+  color: #000000;
 }
 
 .goods-old-price {
@@ -1439,32 +1444,29 @@ li.manufacturers-item  {
   z-index: 1;
 }
 
-.services-item {
+.services-button {
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
-  color: #ffffff;
-}
-
-.services-link {
   color: #ffffff;
   background-color: #32425c;
 
   display: inline-block;
   vertical-align: top;
   padding-left: 22px;
+  margin-top: 0;
 }
 
-.services-link:hover {
+.services-button:hover {
   background-color: #293449;
 }
 
-.services-link:focus {
+.services-button:focus {
   color: #32425c;
   background-color: #ffffff;
 }
 
-.services-link-current {
+.services-button-current {
   color: #32425c;
 
   background-color: #ffffff;
@@ -2922,6 +2924,7 @@ li.manufacturers-item  {
   text-transform: uppercase;
   color: #000000;
 
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
 
