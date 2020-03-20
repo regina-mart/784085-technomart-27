@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -16,7 +16,7 @@ a {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;
@@ -167,35 +167,35 @@ a {
 }
 
 .search::-webkit-input-placeholder {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .search::-moz-placeholder {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .search:-ms-input-placeholder {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .search::-ms-input-placeholder {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .search::placeholder {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -874,7 +874,7 @@ a {
 
 .controls-catalog-slider label {
   position: relative;
-  content: '';
+  content: "";
   display: inline-block;
   vertical-align: top;
   width: 10px;
@@ -887,7 +887,7 @@ a {
 
 #slide-1:checked ~ .controls-catalog-slider label:first-of-type::after,
 #slide-2:checked ~ .controls-catalog-slider label:last-of-type::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
@@ -1079,7 +1079,7 @@ a {
 }
 
 .goods-caption {
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1095,7 +1095,7 @@ a {
 }
 
 .goods-old-price {
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1113,7 +1113,7 @@ a {
   background-image: url(../img/button-goods.svg);
   background-repeat: no-repeat;
 
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1406,7 +1406,7 @@ li.manufacturers-item  {
 .company-text,
 .contacs-map-text,
 .about-goods-text {
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 
@@ -1444,29 +1444,38 @@ li.manufacturers-item  {
   z-index: 1;
 }
 
-.services-button {
+.services-slider-button {
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
   background-color: #32425c;
+  border: none;
 
   display: inline-block;
   vertical-align: top;
   padding-left: 22px;
+  padding-right: 122px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   margin-top: 0;
 }
 
-.services-button:hover {
-  background-color: #293449;
+.services-item:nth-child(3) .services-slider-button {
+  padding-right: 144px;
 }
 
-.services-button:focus {
+.services-slider-button:hover {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.services-slider-button:focus {
   color: #32425c;
   background-color: #ffffff;
 }
 
-.services-button-current {
+.services-slider-button-current {
   color: #32425c;
 
   background-color: #ffffff;
@@ -1569,7 +1578,7 @@ li.manufacturers-item  {
 }
 
 .services-button {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
 
   border: none;
   display: inline-block;
@@ -1639,7 +1648,7 @@ li.manufacturers-item  {
 }
 
 .delivery-item::before {
-  content: '';
+  content: "";
   display: inline-block;
   vertical-align: top;
   background-color: #ee3643;
@@ -1837,6 +1846,7 @@ li.manufacturers-item  {
 
 .map-input:focus,
 .map-textarea:focus {
+  outline: none;
   border: 2px solid #ee3643;
 }
 
@@ -1930,7 +1940,7 @@ li.manufacturers-item  {
 }
 
 .map-button {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -2451,7 +2461,7 @@ li.manufacturers-item  {
 }
 
 .breadcrumbs-item {
-  font-family: 'PTSans', Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
