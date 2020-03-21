@@ -1445,6 +1445,7 @@ li.manufacturers-item  {
 }
 
 .services-slider-button {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
@@ -1455,14 +1456,18 @@ li.manufacturers-item  {
   display: inline-block;
   vertical-align: top;
   padding-left: 22px;
-  padding-right: 122px;
+  padding-right: 140px;
   padding-top: 15px;
   padding-bottom: 17px;
   margin-top: 0;
 }
 
+.services-item:nth-child(2) .services-slider-button {
+  padding-right: 140px;
+}
+
 .services-item:nth-child(3) .services-slider-button {
-  padding-right: 144px;
+  padding-right: 157px;
 }
 
 .services-slider-button:hover {
@@ -1656,6 +1661,7 @@ li.manufacturers-item  {
   height: 2px;
 
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .company-button {
@@ -2005,23 +2011,26 @@ li.manufacturers-item  {
  }
 
  @-webkit-keyframes shake {
-  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+ 0%, 100% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+ 10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-45%); transform: translateX(-45%); }
+ 20%, 40%, 60%, 80% { -webkit-transform: translateX(-55%); transform: translateX(-55%); }
+ }
+
+@keyframes shake {
+  0%, 100% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-45%); transform: translateX(-45%); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(-55%); transform: translateX(-55%); }
   }
 
- @keyframes shake {
-  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
-  }
+@-webkit-keyframes remove {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
-.modal-error {
-  -webkit-animation-name: shake;
-          animation-name: shake;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  }
+@keyframes remove {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
 .footer-background-top {
   background-color: #32425c;
@@ -2639,6 +2648,19 @@ li.manufacturers-item  {
           animation-duration: 0.6s;
   }
 
+.modal-error {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  }
+
+.modal-hide {
+  -webkit-animation-name: remove;
+  animation-name: remove;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
 
 .goods-block {
   display: -webkit-box;
